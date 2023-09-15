@@ -1,0 +1,40 @@
+/* =============
+    Section3
+============= */
+#section-3{
+    div{
+      
+        display: grid;
+        grid-template-areas: ". texts .";
+        grid-template-columns: auto 90% auto;
+       
+        @include md{
+            grid-template-columns: auto 95% auto;
+        }
+        @include lg{
+            grid-template-columns: auto 93% auto;
+        }
+        p{
+            text-align: center;
+            grid-area: texts;
+            font-size: 16pt;
+            color: #0A2B4F;
+            @include md{
+                font-size: 25pt;
+            }
+            @include lg{
+                font-size: 37pt;
+            }
+        }
+          
+    margin-top: 10px;
+    @include md{
+        margin-top: 20px;
+    }
+    @include lg{
+        margin-top: 40px;
+    }
+    
+    }
+    }
+

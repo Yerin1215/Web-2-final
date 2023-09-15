@@ -1,0 +1,142 @@
+/* =============
+    Section1
+============= */
+#section-1 {
+    background-image: url('../img/section-1/hero.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 300px 0 3px;
+ 
+    //margin: auto 0 48pt;
+    @include md{
+        display: grid;
+        grid-template-areas: ". section-1 .";
+        grid-template-columns: auto 80% auto;
+        height: 539px;
+       
+    }
+    @include lg{
+        grid-template-columns: auto 80% auto;
+        height: 624px;
+    }
+    @include xl{
+        grid-template-columns: auto 30% auto;
+        padding: 600px 0 10px;
+    }
+  
+    
+     
+    div{
+        @include md{
+            grid-area: section-1;
+        }
+        
+        h1{
+            margin-top:30px;
+            //padding: 3% 0;
+            text-align: left;
+            color: white;
+            font-size: 29pt;
+            position: sticky;
+          
+            
+            @include md{
+                margin-top: 380px;
+                font-size: 45pt;
+                
+                
+            }
+            @include lg{
+                font-size: 57pt;
+                
+            }
+            @include xl{
+                font-size: 77pt;
+                
+            }
+           
+        }
+       
+          
+    }
+    
+   aside {
+    display: none;
+    
+    @include md{
+        display: block;
+        position: absolute;
+        padding-top: 0;
+        
+    }
+    @include lg{
+        display: block;
+        position: absolute;
+        padding-top: 0;
+    }
+    @include xl{
+        display: block;
+        position: absolute;
+        padding-top: 0;
+    }
+    form {
+        
+        background-color: #FFC800;
+        padding: 20px;
+        display: grid;
+        grid-template-areas: ". contents .";
+        grid-template-columns: auto 87% auto;
+        width: 230px;
+        
+        margin: 31PT auto;
+        box-shadow: 5PX 13PX 20PX #000000;
+        
+        
+        
+        div{
+        
+            grid-area: contents;
+            text-align: center;
+            h2{
+            margin: 30PX 0 25PX;
+            font-size: 23px;
+           
+            color: #AD0302;}
+            
+            input[type=text], input[type=password] {
+            text-align: center;
+            width: 60%;
+            padding: 6px;
+            margin: 3px 0 20px 0;
+            display: inline-block;
+            border: none;
+            background: #195AA1;
+            }
+        
+            input[type=text]:focus, input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+            }
+        
+        
+        
+            .registerbtn {
+            background-color: #0A2B4F;
+            color: white;
+            font-size: 20px;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 80%;
+            opacity: 0.9;
+            }
+        
+        
+        
+        } }
+    }
+    
+}
+        
+        

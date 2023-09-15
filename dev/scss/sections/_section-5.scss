@@ -1,0 +1,188 @@
+/* =============
+    Section5
+============= */
+
+#section-5{
+   
+    margin-top: 70px;
+    @include md{
+        margin-top: 40px;
+    }
+
+    background-color: #F0EDF7;
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-5 .";
+        grid-template-columns: auto 1200px auto;
+    }
+    div{
+       
+   
+    @include xl{
+        grid-area: section-5;
+    }
+    
+    #section-5-one{
+        
+       @include md{
+           display: grid;
+           grid-template-areas: "section-5-left section-5-right";
+           grid-template-columns: 45% 55%;
+       }
+       
+        aside{
+            background-image: url('../img/section-5/flags.jpg');
+            background-position: center;
+            background-size:cover;
+            height:277pt; 
+            grid-area: section-5-right;
+
+            @include md{
+                height: 100%;
+            }
+
+        }
+        section{
+            display: grid;
+            grid-template-areas: ". section-5-content .";
+            grid-template-columns: 5% auto 45%;
+            padding: 4rem 0 6.3rem;
+            @include md{
+                grid-area: section-5-left;
+                grid-template-columns: auto 50% auto;
+                padding: 7.5rem 0 7.5rem;
+            }
+            @include lg{
+                grid-template-columns: auto 40% auto;
+                padding: 9rem 0 9rem;
+            }
+            @include xl{
+                grid-template-columns: auto 45% auto;
+                padding: 10rem 0 10rem;
+            }
+            
+            div{
+                grid-area: section-5-content;
+                
+                #section-5-one-h1{
+                    background-color: #AD0302;
+                    width: 170px;
+                    @include lg{
+                        width: 320px;
+                    }
+                    
+                    h1{
+                        
+                        padding: 10px 0 10px;
+                        color: white;
+                        font-size: 40px;
+                        text-align: center;
+                        @include lg {
+                            font-size: 50pt;
+                        }
+                        @include xl {
+                            font-size: 63pt;
+                        }
+                    }
+                }
+
+                p{
+                    font-size: 20px;
+                    border-left: solid 3PX #AD0302;
+                    @include lg{
+                        font-size: 28px;
+                    }
+                    @include lg{
+                        font-size: 41px;
+                    }
+            }
+        }
+       
+    }
+}
+
+
+
+#section-5-two{
+    @include md{
+        display: grid;
+        grid-template-areas: "section-5-left section-5-right";
+        grid-template-columns: 55% 45%;
+    }
+    
+     aside{
+         background-image: url('../img/section-5/hold-hands.jpg');
+         background-position: center;
+         background-size:cover;
+         height:277pt; 
+         grid-area: section-5-left;
+
+         @include md{
+             height: 100%;
+         }
+
+     }
+     section{
+         display: grid;
+         grid-template-areas: ". section-5-content .";
+         grid-template-columns: 55% auto 5%;
+         padding: 4rem 0 6.3rem;
+         @include md{
+             grid-area: section-5-right;
+             grid-template-columns: auto 46% auto;
+             padding: 7.5rem 0 7.5rem;
+         }
+         @include lg{
+             grid-template-columns: auto 40% auto;
+             padding: 9rem 0 9rem;
+         }
+         @include xl{
+             grid-template-columns: auto 43% auto;
+             padding: 10rem 0 10rem;
+         }
+         
+         div{
+             grid-area: section-5-content;
+             
+             #section-5-two-h1{
+                 background-color: #FFC800;
+                 width: 170px;
+                 @include lg{
+                    width: 320px;
+                }
+                @include xl{
+                    width: 370px;
+                }
+                 h1{
+                     padding: 10px 0 10px;
+                     color: white;
+                     font-size: 40px;
+                     text-align: center;
+                     @include lg {
+                         font-size: 50pt;
+                     }
+                     @include xl {
+                         font-size: 63pt;
+                     }
+                 }
+             }
+
+             p{
+                 font-size: 20px;
+                 text-align: right;
+                 @include lg{
+                     font-size: 28px;
+                 }
+                 @include lg{
+                     font-size: 41px;
+                 }
+         
+     }
+    
+ }
+}}}}
+
+    
+   
+        
+

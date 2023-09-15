@@ -1,0 +1,88 @@
+/* =============
+    Section7
+============= */
+#section-7{
+    @include xl{
+        display: grid;
+        grid-template-areas: ". section-7 .";
+        grid-template-columns: auto 1200px auto;
+    }
+    margin-top: 70px;
+    @include md{
+        margin-top: 40px;
+    }
+    @include md{
+        margin-top: 40px;
+    }
+    div{
+       @include xl{
+           grid-area: section-7;
+       }
+        section{
+            background-color: #AD0302;
+            display: grid;
+            grid-template-areas: ". section-5-content .";
+            grid-template-columns: auto 87% auto;
+            padding: 30px 0 30px;
+            @include md{
+                grid-template-columns: auto 78% auto;
+                padding: 36px 0 36px;
+            }
+            @include lg{
+                grid-template-columns: auto 78% auto;
+                padding: 36px 0 36px;
+            }
+           
+           
+            
+            div{
+                grid-area: section-5-content;
+                h1{
+                    padding: 10px 0 10px;
+                    color: white;
+                    font-size: 40px;
+                    @include md{
+                        font-size: 32px;
+                    }
+                    @include lg{
+                        font-size: 41px;
+                        word-spacing: 10px;
+                    }
+                    
+                }
+                    
+
+                p{
+                    font-size: 20px;
+                    color: white;
+                    @include md{
+                        font-size: 16px;
+                    }
+                    @include lg{
+                        font-size: 21px;
+                    }
+                }
+        
+       
+             }
+        }
+
+
+
+        aside{
+            background-image: url('../img/section-7/students.jpg');
+            background-position: center;
+            background-size:cover;
+            height:277pt; 
+            @include md{
+                height:500px;
+            }
+            @include lg{
+                height:700px;
+            }
+            
+    
+
+            
+}}}
+

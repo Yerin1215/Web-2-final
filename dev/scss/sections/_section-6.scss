@@ -1,0 +1,28 @@
+/* =============
+    Section6
+============= */
+#section-6{
+ margin-top: 30px;
+ display: grid;
+ grid-template-areas: ". globe .";
+ grid-template-columns: auto 90% auto;
+
+ @include md{
+     margin-top: 40px;
+    grid-template-columns: auto 70% auto;
+ }
+ @include lg{
+     margin-top: 58px;
+    grid-template-columns: auto 60% auto;
+ }
+ @include lg{
+    margin-top: 67px;
+   grid-template-columns: auto 65% auto;
+}
+
+ img{
+     grid-area:globe;
+     width: 100%;
+ }
+}        
+

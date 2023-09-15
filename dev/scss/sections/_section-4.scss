@@ -1,0 +1,72 @@
+/* =============
+    Section4
+============= */
+#section-4{
+    @include md{
+        display: NONE;
+    }
+    @include lg{
+        display: NONE;
+    }
+    @include xl{
+        display: NONE;
+    }
+    
+form {
+
+background-color: #FFC800;
+padding: 30px;
+display: grid;
+grid-template-areas: ". contents .";
+grid-template-columns: auto 80% auto;
+width: 240PT;
+
+margin: 31PT auto;
+box-shadow: 5PX 13PX 20PX #000000;
+
+
+
+div{
+
+    grid-area: contents;
+    text-align: center;
+    h1{
+    margin: 50PX 0 35PX;
+    font-size: 19pt;
+    color: #AD0302;}
+    
+    input[type=text], input[type=password] {
+    text-align: center;
+    width: 60%;
+    padding: 13px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #195AA1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+    }
+
+
+
+    .registerbtn {
+    background-color: #0A2B4F;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 80%;
+    opacity: 0.9;
+    }
+
+
+
+}}
+
+}
+
+

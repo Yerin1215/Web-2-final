@@ -1,0 +1,193 @@
+/* =============
+    Section8
+============= */
+#section-8{
+    display: grid;
+    grid-template-areas: ". section-8 .";
+    grid-template-columns: 8px auto 8px;
+    padding: 30px 0 30px;
+
+    @include md{
+        grid-template-columns: auto 90% auto;
+        padding: 40px 0 40px;
+    }
+    @include lg{
+        grid-template-columns: auto 98% auto;
+        padding: 58px 0 58px;
+    }
+    @include xl{
+        grid-template-columns: auto 1200px auto;
+        padding: 67px 0 67px;
+    }
+   
+    #staff{
+        grid-area: section-8;
+        ul{
+            display: grid;
+            gap: 23PX;
+            @include md{
+                display: grid;
+                grid-template-areas: "staff-1 staff-2"
+                "staff-3 staff-4";
+                grid-template-columns: repeat(2,1fr);
+                gap: 78PX;
+            }
+            li{
+                aside{
+                    background-size: cover;
+                    height: 247px;
+                    @include lg{
+                        height: 545px;
+                    }
+                }
+                section{
+                    margin-top: 22px;
+                   
+                    p1{
+                      font-size: 16px;
+                      @include lg{
+                          font-size: 23px;
+                      }
+                      @include xl{
+                        font-size: 27px;
+                    }
+                    }
+                    div{
+                       padding: 4px 0 4px;
+                       padding-left: 7px;
+                       width: 163px;
+                       @include lg{
+                           width: 315px;
+                           padding: 17px 0 17px;
+                           padding-left: 10px;
+                       }
+                        p2{
+                            font-size: 16px;
+                            @include lg{
+                                font-size: 23px;
+                            }
+                            @include xl{
+                              font-size: 27px;
+                          }
+                            
+                           
+                        }
+                    }
+                    p3{
+                        font-size: 16px;
+                        @include lg{
+                            font-size: 23px;
+                        }
+                        @include xl{
+                          font-size: 27px;
+                      }
+                    }
+                    }
+                }
+                #staff-1{
+                    @include md{
+                        grid-area: staff-1;
+                    }
+                    aside{
+                        background-image: url('../img/section-8/staff-1.jpg');
+                    }
+                    #staff-1-content{
+                        p1{
+                            color: #144172;
+                        }
+                        p3{
+                            color: #144172;
+                        }
+
+                    
+                    #staff-1-flag{
+                        background-color: #144172;
+                        margin: 7px 0 25px;
+                        p2{
+                            color: white;
+                        }
+                        
+                    }}
+                }
+                #staff-2{
+                    @include md{
+                        grid-area: staff-2;
+                    }
+                    aside{
+                        background-image: url('../img/section-8/staff-2.jpg');
+                    }
+                    #staff-2-content{
+                        p1{
+                            color: black;
+                        }
+                        p3{
+                            color: black;
+                        }
+
+                    
+                    #staff-2-flag{
+                        background-color: #FFC800;
+                        margin: 7px 0 25px;
+                        p2{
+                            color: black;
+                        }
+                        
+                    }}
+                }
+                #staff-3{
+                    @include md{
+                        grid-area: staff-3;
+                    }
+                    aside{
+                        background-image: url('../img/section-8/staff-3.jpg');
+                    }
+                    #staff-3-content{
+                        p1{
+                            color: #144172;
+                        }
+                        p3{
+                            color: #144172;
+                        }
+
+                    
+                    #staff-3-flag{
+                        background-color: #144172;
+                        margin: 7px 0 25px;
+                        p2{
+                            color: white;
+                        }
+                        
+                    }}
+                }
+                #staff-4{
+                    @include md{
+                        grid-area: staff-4;
+                    }
+                    aside{
+                        background-image: url('../img/section-8/staff-4.jpg');
+                    }
+                    #staff-4-content{
+                        p1{
+                            color: black;
+                        }
+                        p3{
+                            color: black;
+                        }
+
+                    
+                    #staff-4-flag{
+                        background-color: #FFC800;
+                        margin: 7px 0 25px;
+                        p2{
+                            color: black;
+                        }
+                        
+                    }}
+                }
+            }
+        }
+
+    }
+
+       
+
